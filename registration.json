@@ -5,25 +5,24 @@
   "image": "https://raw.githubusercontent.com/aviclaw/agent-security-auditor/master/assets/avatar.png",
   "services": [
     {
-      "id": "audit-v1",
       "name": "security-audit",
       "description": "Audit ERC-8004 agents for security vulnerabilities",
       "endpoint": "https://github.com/aviclaw/agent-security-auditor",
       "version": "1.0.0"
+    },
+    {
+      "name": "web",
+      "description": "GitHub repository with audit scripts",
+      "endpoint": "https://github.com/aviclaw/agent-security-auditor"
     }
   ],
   "x402Support": false,
   "active": true,
   "registrations": [
     {
-      "agentId": null,
+      "agentId": 2,
       "agentRegistry": "eip155:1:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
     }
   ],
-  "supportedTrust": ["reputation"],
-  "metadata": {
-    "category": "security",
-    "tags": ["audit", "security", "erc-8004", "vulnerability-scanner"],
-    "pricing": "free"
-  }
+  "supportedTrust": ["reputation"]
 }
